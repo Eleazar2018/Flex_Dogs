@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -6,38 +14,125 @@ body{
     width: 97%;
     max-width: 1200px;
     margin: 0 auto;
-    float: none;
-    background-color: #29009c;
+    /*float: none;*/
+    background-color: white;
     text-align: center;
+
+}
+
+.wrapper .row .col-2{
+    background-color: #29009c;
 
 }
 div img {
     width: 100%;
-    /*max-width: 250px;*/
+    /*max-width: 273px;*/
 }
+
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.col-2, .col-3, 
+.col-4, .col-5, .col-5-6,
+.col-6, .col-7,
+.col-8, .col-9 {
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 1px;
+    padding: 0.5em;
+}
+
+.main-title{
+    text-align: center;
+    padding: 1em;
+}
+
+.main-title h1{
+    font-size: 3em;
+}
+
+.wrapper .row .col-2{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 1px;
+    padding: 0.5em;
+}
+
+.wrapper .row-2 .col-3{
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    min-height: 1px;
+    padding: 0.5em;
+}
+
 
 h1{
     color: white;
     font-size: 35px;
 }
 
+h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
 h3{
     color: black;
     font-size: 30px;
+    text-align: center;
 }
 
 h4{
     text-align: left;
+    font-size: 25px;
+    color: black;   
 }
+
+h5{
+    color: black;
+}
+
+h6 {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
 p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.wrapper .row-2 .col-3 .p {
+    text-align: justify;
+    color: black;
+    font-size: 10px;
+}
+
 .wrapper .row-2 .col-3{
     background-color: #29009c;
-    float: left;
+    /*float: left;*/
+
 }  
+.wrapper .row-2 .col-3 .left{
+   width: 133px;
+    height: 134px;
+    /*float: left;*/
+
+}
+
+.wrapper .row-3 .col-3 .p{
+    background-color: #5769ff; 
+    font-size: 10px;
+         
+}
 
 .wrapper .row-3 .col-4{
     background-color: #5769ff; 
@@ -49,11 +144,62 @@ p{
     color: black;
 }
 
+.wrapper .row-4 .col-5 .agenor{
+    /*width: 273px;
+    height: 302px;*/
+    /*margin-left: -20px; */   
+}
+
+.wrapper .row-4 .col-5 .godo{
+    /*width: 273px;
+    height: 302px;
+    margin-left: -20px;  */  
+}
+
+.wrapper .row-4 .col-5-6 .rex{
+   /* width: 273px;
+    height: 302px;
+    margin-left: -20px;  */  
+}
+
+.wrapper .row-4 .col-5-6 .mila{
+    /*width: 273px;
+    height: 302px;    
+    margin-left: -20px;*/
+}
+
+.wrapper .row-5 .col-6 .neve{
+   /* width: 219px;
+    height: 207px; 
+    /*margin-left: -20px; */
+}
+
+.wrapper .row-6 .col-7 .bingo{
+    /*width: 273px;
+    height: 302px;    
+    /*margin-left: -20px;*/
+}
+
+.wrapper .row-7 .col-8 .floc{
+    /*width: 199px;
+    height: 188px;*/
+           
+}
+
+
 #dog2 {
     border-radius: 10%;
+    width: 235px;
+    height: 222px;
+    margin-top: 30px;
+    
 }
 
 .wrapper .row-4 .col-5{
+    background-color: #818fff;
+
+}
+.wrapper .row-4 .col-5-6{
     background-color: #818fff;
 
 }
@@ -70,12 +216,89 @@ p{
     background-color: #212075;
 }
 
-.wrapper .row-9 .col-9{
+.wrapper .row-8 .col-9{
     background-color: #1456ff;
 
 }
 
-h4{
-    font-size: 35px;
-    color: black;
+/*medias queries*/
+/*modo tablet*/ 
+@media only screen and (min-width: 480px){
+div img{
+    width: 100%;
+    max-width: 645px;
+}
+/*colunas no tablet*/
+.col-2, .col-3, 
+.col-4, .col-5, .col-5-6,
+.col-6, .col-7,
+.col-8, .col-9 {
+    margin-right: 0;
+    float: left;
+}
+.col-5{
+    width: 44%;
+    min-height: 585px;
+}
+.col-5-6{
+    width: 44%;
+    min-height: 585px;
+}
+.wrapper .row-5 .col-6 .neve{
+    float: left;
+    width: 245px;
+    height: 296px;
+}
+.wrapper .row-6 .col-7 .bingo{
+    float: left;
+    width: 200px;
+    height: 296px;
+}
+.wrapper .row-7 .col-8 .floc{
+    float: right;
+    width: 199px;
+    height: 188px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+    
+/*desktop*/
+@media only screen and (min-width:768px){
+    .col-5, .col-5-6{
+        width: 20%;
+    }
+.row, .col-2, .row-2, .col-3,     
+.col-2, .col-3,
+.col-4, .col-5,
+.col-6, .col-7,
+.col-8, .col-9 {
+    margin-right: 0;
+    float: left;
+} 
+.row, .col-2{
+    width: 50%;
+    padding: 2px;    
+}
+
+.row-2, .col-3{
+    width: 50%; 
+    padding: 2px;   
+} 
+.row-5 .col-6{
+    width: 68%;
+}
+.row-6 .col-7{
+    width: 20%;
+    /*min-width: 513px;*/
+}
+
+.row .col-2, .row-2 .col-3{
+    width: 44%;
+    float: left;
+} 
+.wrapper .row-6 .col-7 .bingo{
+    width: 98%;    
+}
+.wrapper .row-5 .col-6, .wrapper .row-6 .col-7{
+   min-height: 535px;
 }
