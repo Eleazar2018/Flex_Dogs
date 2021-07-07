@@ -12,29 +12,23 @@ body{
 
 .wrapper{
     width: 97%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    /*float: none;*/
-    background-color: white;
-    text-align: center;
+    float: none;
+    background-color:red;
+    /*background-color:white;*/
+    /*text-align: center;*/
 
 }
-
-.wrapper .row .col-2{
-    background-color: #29009c;
-
-}
-div img {
+div img {/*para imagem fluida*/
     width: 100%;
     /*max-width: 273px;*/
 }
-
 .row::after{
     content: '';
     display: table;
     clear: both;
 }
-
 .col-2, .col-3, 
 .col-4, .col-5, .col-5-6,
 .col-6, .col-7,
@@ -46,6 +40,38 @@ div img {
     padding: 0.5em;
 }
 
+/*Cores de fundo*/
+.col-2, .col-3{
+    background-color: #29009c;
+}
+.col-4{
+    background-color: #5769ff; 
+}
+.col-5{
+    background-color: #818fff;
+}
+.col-5-6{
+    background-color: #818fff;
+
+}
+.col-6{
+    background-color: #bbc2fc;
+}
+
+.col-7{
+    background-color: #b7d9ed;
+}
+
+.col-8{
+    background-color: #212075;
+}
+
+.col-9{
+    background-color: #1456ff;
+}
+/*fim das cores*/
+
+/*Título principal*/
 .main-title{
     text-align: center;
     padding: 1em;
@@ -54,24 +80,11 @@ div img {
 .main-title h1{
     font-size: 3em;
 }
-
-.wrapper .row .col-2{
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
-    min-height: 1px;
-    padding: 0.5em;
-}
-
-.wrapper .row-2 .col-3{
-    width: 92%;
-    margin-left: 4%;
-    margin-right: 4%;
-    min-height: 1px;
-    padding: 0.5em;
-}
+/*Fim Título*/
 
 
+
+/*h1----h6*/
 h1{
     color: white;
     font-size: 35px;
@@ -104,27 +117,29 @@ h6 {
     font-size: 1em;
     color: white;
 }
+/*h1----h6*/
 
 p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p.justi{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
 .wrapper .row-2 .col-3 .p {
     text-align: justify;
     color: black;
     font-size: 10px;
 }
 
-.wrapper .row-2 .col-3{
-    background-color: #29009c;
-    /*float: left;*/
-
-}  
+ 
 .wrapper .row-2 .col-3 .left{
    width: 133px;
     height: 134px;
-    /*float: left;*/
+    float: left;
 
 }
 
@@ -133,9 +148,12 @@ p{
     font-size: 10px;
          
 }
+.row-2 .col-3 .justi{
+    text-align: right;
+}
 
 .wrapper .row-3 .col-4{
-    background-color: #5769ff; 
+    
     font-size: 35px;
          
 }
@@ -145,45 +163,38 @@ p{
 }
 
 .wrapper .row-4 .col-5 .agenor{
-    /*width: 273px;
-    height: 302px;*/
-    /*margin-left: -20px; */   
+    padding-right: 2em;
+    
 }
 
 .wrapper .row-4 .col-5 .godo{
-    /*width: 273px;
-    height: 302px;
-    margin-left: -20px;  */  
+    padding-right: 2em;   
 }
 
 .wrapper .row-4 .col-5-6 .rex{
-   /* width: 273px;
-    height: 302px;
-    margin-left: -20px;  */  
+    padding-right: 2em;
 }
 
 .wrapper .row-4 .col-5-6 .mila{
-    /*width: 273px;
-    height: 302px;    
-    margin-left: -20px;*/
+    padding-right: em; 
 }
 
 .wrapper .row-5 .col-6 .neve{
-   /* width: 219px;
-    height: 207px; 
-    /*margin-left: -20px; */
+    padding-right: 4em;    
 }
 
 .wrapper .row-6 .col-7 .bingo{
-    /*width: 273px;
-    height: 302px;    
-    /*margin-left: -20px;*/
+    padding-right: 4em; 
 }
 
-.wrapper .row-7 .col-8 .floc{
-    /*width: 199px;
-    height: 188px;*/
-           
+
+.floc{
+    width: 199px;
+    height: 188px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 
@@ -191,42 +202,17 @@ p{
     border-radius: 10%;
     width: 235px;
     height: 222px;
-    margin-top: 30px;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
 }
-
-.wrapper .row-4 .col-5{
-    background-color: #818fff;
-
-}
-.wrapper .row-4 .col-5-6{
-    background-color: #818fff;
-
-}
-
-.wrapper .row-5 .col-6{
-    background-color: #bbc2fc;
-}
-
-.wrapper .row-6 .col-7{
-    background-color: #b7d9ed;
-}
-
-.wrapper .row-7 .col-8{
-    background-color: #212075;
-}
-
-.wrapper .row-8 .col-9{
-    background-color: #1456ff;
-
-}
-
 /*medias queries*/
 /*modo tablet*/ 
 @media only screen and (min-width: 480px){
 div img{
     width: 100%;
-    max-width: 645px;
+    max-width: 250px;
 }
 /*colunas no tablet*/
 .col-2, .col-3, 
@@ -234,23 +220,23 @@ div img{
 .col-6, .col-7,
 .col-8, .col-9 {
     margin-right: 0;
+    padding: 0.5em;
     float: left;
 }
-.col-5{
+.wrapper .row-4 .col-5{
     width: 44%;
     min-height: 585px;
 }
-.col-5-6{
+.wrapper .row-4 .col-5-6{
     width: 44%;
     min-height: 585px;
 }
+
 .wrapper .row-5 .col-6 .neve{
-    float: left;
     width: 245px;
     height: 296px;
 }
 .wrapper .row-6 .col-7 .bingo{
-    float: left;
     width: 200px;
     height: 296px;
 }
@@ -261,35 +247,44 @@ div img{
     margin-bottom: 20px;
     margin-right: 10px;
 }
-    
+
 /*desktop*/
 @media only screen and (min-width:768px){
-    .col-5, .col-5-6{
-        width: 20%;
-    }
-.row, .col-2, .row-2, .col-3,     
+    div img{
+        width: 100%;
+        /*max-width: 250px;*/
+    } 
+    
+
+.col-2, .col-3,      
 .col-2, .col-3,
 .col-4, .col-5,
 .col-6, .col-7,
-.col-8, .col-9 {
+.col-8, .col-9{
     margin-right: 0;
+    padding: 0.5em;
     float: left;
-} 
-.row, .col-2{
-    width: 50%;
-    padding: 2px;    
+}
+.wrapper .row-4 .col-5{
+    width: 20%;
 }
 
-.row-2, .col-3{
-    width: 50%; 
-    padding: 2px;   
+.wrapper .row-4 .col-5-6{
+    width: 20%;
+}
+
+.wrapper .row-2 .col-2{
+    width: 44%;
+}
+
+.wrapper .row-2 .col-3{
+    width: 44%;
 } 
 .row-5 .col-6{
     width: 68%;
 }
 .row-6 .col-7{
     width: 20%;
-    /*min-width: 513px;*/
 }
 
 .row .col-2, .row-2 .col-3{
